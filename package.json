@@ -1,0 +1,31 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "this is namstey react",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniljoshi89/reactlearn.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "anil joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniljoshi89/reactlearn/issues"
+  },
+  "homepage": "https://github.com/aniljoshi89/reactlearn#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
