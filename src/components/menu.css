@@ -1,0 +1,117 @@
+/* Overall container for the restaurant menu */
+.container {
+    width: 100%; /* Ensure container takes up the full width of the screen */
+    max-width: 100%; /* Allow container to expand to the full width */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Restaurant name styling */
+  .res-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Search input field styling */
+  input[type="text"],
+  input[type="search"] {
+    width: 100%; /* Ensures the search input takes the full width */
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: none; /* Removed the border */
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the container holding menu cards */
+  .res-menu-card {
+    display: flex;
+    flex-direction: column; /* Column layout for menu items */
+    gap: 20px;
+    width: 100%; /* Ensure the menu cards take up the full width of the container */
+    align-items: center;
+    padding: 0 20px; /* Ensure some padding around the menu items */
+  }
+  
+  /* --- ItemCard Styling --- */
+  .item-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%; /* Make item card take full width */
+    max-width: 500px; /* Limit the maximum width of item cards */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Box shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  /* Item name styling */
+  .item-card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Item price styling */
+  .item-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Add to Cart button */
+  .item-card button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Image inside item card (optional, if applicable) */
+  .item-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .item-heading {
+    display: flex;
+    justify-content: space-between; /* Pushes items to the left and right */
+    align-items: center; /* Vertically aligns items */
+    width: 100%; /* Ensures the flex container takes full width */
+  }
+  .price-footer{
+    width: 100%;
+    position: fixed;
+    bottom:0 ;
+    background-color: #ECC622;
+    z-index: 100px;
+    text-align: center;
+  }
+  

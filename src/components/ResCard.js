@@ -5,7 +5,7 @@ const ResCard = (props) =>{
    const {resData} = props;
        return (
         <div className="res-card" >
-            <img src={logo} style={{width:"100%"}}></img>
+            <img src={logo} alt="img" style={{width:"100%"}}></img>
             <h4>{resData.name}</h4>
             <h5>Rating . {resData.rating}</h5>
             <h5>Delivery Time . {resData.deliveryTime}</h5>
