@@ -35,18 +35,5 @@ export const restroList = [
   { "name": "Pizza Mania", "rating": "4.5", "deliveryTime": "25 minutes", "id": 34, "promoted": true },
   { "name": "Famous Falafel", "rating": "4.0", "deliveryTime": "30 minutes", "id": 35, "promoted": false },
   { "name": "Biryani Blues", "rating": "4.6", "deliveryTime": "45 minutes", "id": 36, "promoted": true },
-  { "name": "Shawarma Shack", "rating": "4.3", "deliveryTime": "35 minutes", "id": 37, "promoted": false },
-  { "name": "Veggie Delight", "rating": "3.8", "deliveryTime": "25 minutes", "id": 38, "promoted": false },
-  { "name": "Coffee Culture", "rating": "4.4", "deliveryTime": "20 minutes", "id": 39, "promoted": true },
-  { "name": "Dosa Delight", "rating": "4.5", "deliveryTime": "30 minutes", "id": 40, "promoted": true },
-  { "name": "Grill and Chill", "rating": "4.6", "deliveryTime": "35 minutes", "id": 41, "promoted": false },
-  { "name": "Smoothie Bar", "rating": "4.2", "deliveryTime": "25 minutes", "id": 42, "promoted": false },
-  { "name": "Taco King", "rating": "4.3", "deliveryTime": "45 minutes", "id": 43, "promoted": false },
-  { "name": "Bagel House", "rating": "3.9", "deliveryTime": "20 minutes", "id": 44, "promoted": false },
-  { "name": "Fish Fry Corner", "rating": "4.1", "deliveryTime": "40 minutes", "id": 45, "promoted": false },
-  { "name": "Pasta Heaven", "rating": "4.4", "deliveryTime": "35 minutes", "id": 46, "promoted": true },
-  { "name": "Samosa Junction", "rating": "3.7", "deliveryTime": "15 minutes", "id": 47, "promoted": false },
-  { "name": "Brownie Bites", "rating": "4.5", "deliveryTime": "25 minutes", "id": 48, "promoted": true },
-  { "name": "Falooda House", "rating": "4.2", "deliveryTime": "30 minutes", "id": 49, "promoted": false },
-  { "name": "The Grill Hub", "rating": "4.6", "deliveryTime": "50 minutes", "id": 50, "promoted": true }
+
 ];

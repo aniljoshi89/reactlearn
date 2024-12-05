@@ -9,6 +9,7 @@ const RestaurantMenu = () => {
   const [filteredMenu, setFilteredMenu] = useState(menuInfo);
   const { id } = useParams();
   const restaurantId = parseInt(id) - 1;
+  const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
     if (menuInfo[restaurantId]) {
@@ -21,6 +22,10 @@ const RestaurantMenu = () => {
 
   if (!menuInfo[restaurantId]) {
     return <div>Restaurant not found</div>;
+  }
+
+  const handleClick = () =>{
+     setClicked(!clicked);
   }
 
   return (
@@ -40,18 +45,24 @@ const RestaurantMenu = () => {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className='text-center font-bold'>Scro</div>
+
+        <div className=' w-6/12 rounded-lg p-3 bg-gray-200 flex text-center m-auto justify-between'>
+          <div className='font-bold'>Available ({menuInfo[restaurantId].menu.length})</div>
+          <div className='cursor-pointer' onClick={handleClick}>⬇️</div>
+          </div>
         {filteredMenu.length > 0 ? (
-          filteredMenu.map((res) => (
-            <div key={res.id} className="w-full">
+          filteredMenu.map((res) => {
+            if(clicked)
+              {return (<div key={res.id} className="w-full">
               <ItemCard itemData={res} />
-            </div>
-          ))
+            </div>)
+          }
+})
         ) : (
           <div>No items found</div>
         )}
       </div>
-
+   
       {/* Footer for total price */}
       {/* <div className='price-footer'>Total amount: </div> */}
     </div>
